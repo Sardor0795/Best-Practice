@@ -536,13 +536,7 @@ ul li:nth-child(5) {
         right: 150px;
         top: 18px;
     }
-    /* #check:checked ~ #author {
-        display: block;
-        z-index: 500;
-        position: fixed;
-        top: 40px;
-        right: 150px;
-    } */
+    
     ul li:nth-child(5) {
         margin-right: 0px;
     }
