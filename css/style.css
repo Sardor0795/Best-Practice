@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.fa-chevron-right {
+    margin-left: 10px;
+}
+.row {
+    display: flex;
+    flex-flow: wrap row;
+}
+body {
+    overflow-x: hidden;
+}
+.trending .block .box span {
+    margin-left: 10px;
+    color: chocolate;
+}
+.trending .box {
+    position: relative;
+}
+.trending .sale::before {
+    content: "SALE";
+    position: absolute;
+    text-align: center;
+    top: 25px;
+    left: 50px;
+    width: 50px;
+    height: 21px;
+    z-index: 5;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgba(210, 105, 30, 0.837);
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+.header {
+    height: 80px;
+    padding: 20px 0;
+    position: relative;
+}
+img {
+    position: relative;
+    top: 0px;
+    height: 20px;
+    margin-left: 10px;
+}
+ul {
+    display: flex;
+    list-style: none;
+    line-height: 35px;
+}
+ul li {
+    margin: 0 15px;
+}
+ul li a {
+    position: relative;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+ul li a::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: #000;
+    bottom: -5px;
+    transition: .4s transform;
+    transform: scale(0);
+    transform-origin: right;
+}
+label #btn,
+label #cancel {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    display: none;
+}
+ul li a:hover::before {
+    transform: scale(1);
+    transform-origin: left;
+}
+#check {
+    display: none;
+}
+.arrow {
+    margin-left: 10px;
+    font-size: 10px;
+}
+ul li:nth-child(5) {
+    margin-right: 200px;
+}
+
+/* -------------------- Banner -------------------- */
+
+.banner {
+    height: 400px;
+    background-image: url("../img/slide11_3024x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+.banner p{
+    font-weight: bold;
+}
+.banner p span {
+    color: chocolate;
+}
+.banner h1 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+.banner a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    background-color: black;
+    font-size: 12px;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* -------------------- Trending -------------------- */
+
+.trending h2, .trending p {
+    text-align: center;
+}
+.trending h2 {
+    margin-top: 35px;
+}
+.trending h4 {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+.trending p {
+    font-size: 15px;
+    margin: 5px 0 5px 0;
+}
+.trending .image {
+    width: 100%;
+    height: 350px;
+    padding: 0 20px;
+}
+.trending .image img {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+}
+.trending .txt {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+}
+.trending .txt p {
+    text-align: left;
+    margin-left: 20px;
+}
+.trending .txt .advert_img {
+    display: flex;
+    justify-content: space-between;
+}
+.trending .txt .advert_img .small_images {
+    margin-right: 22px;
+}
+.trending .txt .advert_img img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+.trending .box {
+    margin-top: 30px;
+}
+
+/* -------------------- Shop -------------------- */
+
+.shop {
+    height: 400px;
+    background-image: url("../img/banner6_1512x.jpg");
+    margin: 30px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70%;
+}
+
+/* -------------------- Subscribe -------------------- */
+
+.subscribe {
+    height: 300px;
+    background-image: url("../img/newsletter-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.subscribe .block {
+    background-color: #fff;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 10px;
+}
+.subscribe .block h2 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.subscribe .block p {
+    text-align: center;
+    font-size: 13px;
+}
+.subscribe .block input, .subscribe .block a {
+    display: inline-block;
+}
+.subscribe .block input {
+    width: 60%;
+    height: 25px;
+    margin: 15px 0 15px 0;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.subscribe .block a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 6px 10px;
+    background-color: rgb(21, 20, 20);
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+/* -------------------- Info -------------------- */
+
+.info {
+    height: 600px;
+    background-color: #F8F8F8;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.info .fa-plane-departure, .info .fa-reply, .info .fa-id-card {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.618);
+}
+.info h4 {
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+}
+.info p {
+    font-size: 14px;
+}
+.info .middle {
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.583);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.583);
+}
+.info a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* -------------------- Blog -------------------- */
+
+.blog {
+    height: 1450px;
+    text-align: center;
+}
+.blog h2 {
+    font-size: 20px;
+    margin: 50px 0 0 0;
+}
+.blog p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.789);
+    padding: 15px;
+    margin-bottom: 7px;
+}
+.blog .cards {
+    display: flex;
+    flex-flow: row wrap;
+}
+.blog .cards .card {
+    padding: 0 20px;
+    text-align: left;
+    margin-top: 40px;
+}
+.blog .cards .card .image{
+    width: 100%;
+    height: 200px;
+}
+.blog .cards .card .image img {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+}
+.blog .cards .card .life {
+    display: inline-block;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(191, 106, 45);
+    padding: 2px 5px;
+    border-radius: 2px;
+    margin-top: 25px;
+}
+.blog .cards .card .date span {
+    color: #000;
+    font-weight: bold;
+}
+.blog .cards .card h2 {
+    margin-top: 0;
+}
+.blog .cards .card .date {
+    font-size: 12px;
+    padding-left: 0;
+}
+.blog .cards .card p {
+    padding: 0;
+    font-size: 13px;
+}
+.blog .cards .card a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    background-color: rgba(235, 230, 230, 0.508);
+    padding: 8px 18px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.289);
+}
+
+/* -------------------- Footer -------------------- */
+
+.footer {
+    height: 1050px;
+    background-color: #1A1A1A;
+    position: relative;
+}
+.footer .block1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.453);
+}
+.footer .box1 {
+    width: 100%;
+    height: 180px;
+    padding-top: 50px;   
+}
+.footer .box1 .image {
+    width: 100px;
+}
+.footer .box1 .image img {
+    width: 100%;
+}
+.footer .box1 i {
+    color: white;
+    padding: 30px 10px 30px 10px;
+}
+.footer .box2 {
+    color: white;
+    height: 260px;
+}
+.footer .box2 h4 {
+    padding-bottom: 20px;
+}
+.footer .box2 p {
+    color: rgba(255, 255, 255, 0.624);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.footer .box3 {
+    color: white;
+    height: 240px;
+}
+.footer .box3 h4 {
+    padding-bottom: 20px;
+}
+.footer .box3 p {
+    color: rgba(255, 255, 255, 0.624);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.footer .box4 {
+    height: 200px;
+    margin-bottom: 30px;
+}
+.footer .box4 h4 {
+    color: white;
+    padding-top: 20px;
+}
+.footer .box4 .tel {
+    display: flex;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 0.535);
+    font-size: 13px;
+}
+.footer .box4 p {
+    padding-top: 10px;
+}
+.footer .box4 i {
+    padding-top: 12px;
+    padding-right: 10px;
+}
+.footer .box4 a {
+    color: rgba(255, 255, 255, 0.535);;
+}
+.footer .block2 {
+    padding: 20px;
+    height: 60px;
+    position: relative;
+}
+.footer .block2 span {
+    color: white;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.footer .block2 p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.446);
+}
+.footer .block2 .logo {
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+}
+.footer .block2 .logo img {
+    width: 100%;
+}
+.footer .topButton a{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    right: 10px;
+    bottom: 95px;
+    line-height: 55px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.529);
+    background-color: #fff;
+    border-radius: 50%;
+}
+.footer .topButton a i {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.563);
+}
+
+
+/* ---------------------- Media ---------------------- */
+
+
+@media (max-width: 1000px) {
+    
+    label #btn {
+        display: inline-block;
+        transition: 1s ease;
+    }
+    ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: #000;
+        padding-top: 110px;
+        display: block;
+        line-height: 40px;
+        z-index: 100;
+        transition: .5s;
+        opacity: .9;
+    }
+    ul li {
+        margin-left: 50px;
+    }   
+    ul li a {
+        font-size: 20px ;
+        color: #fff;
+        transition: .5s ease;
+    }
+    ul li a:hover{
+        color: green;
+    }  
+    #check:checked ~ ul {
+        right: 0;
+    }   
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+        z-index: 101;
+        color: #fff;
+    }
+}
+
+@media (min-width: 62rem) {
+    .banner h1 {
+        font-size: 35px;
+        margin: 20px 0;
+    }
+    .banner a {
+        padding: 13px 20px;
+    }
+    .subscribe {
+        height: 400px;
+        background-image: url("../img/newsletter-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .subscribe .block {
+        background-color: #fff;
+        width: 60%;
+        height: 250px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 25px 10px;
+    }
+    .subscribe .block h2 {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .subscribe .block p {
+        text-align: center;
+        font-size: 15px;
+    }
+    .subscribe .block input, .subscribe .block a {
+        display: inline-block;
+    }
+    .subscribe .block input {
+        width: 60%;
+        height: 30px;
+        margin: 15px 0 15px 0;
+    }
+    .subscribe .block a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 8px 20px;
+        background-color: rgb(21, 20, 20);
+        margin-left: 10px;
+        border-radius: 3px;
+    }
+    .info {
+        height: 300px;
+        background-color: #F8F8F8;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .info .container {
+        display: flex;
+    }
+    .info .fa-plane-departure, .info .fa-reply, .info .fa-id-card {
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.638);
+    }
+    .info h4 {
+        font-size: 15px;
+        margin: 10px 0 10px 0;
+    }
+    .info p {
+        font-size: 14px;
+    }
+    .info .middle {
+        margin: 0px 0;
+        padding: 0px 0;
+        border-top: none;
+        border-bottom: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.57);
+        border-left: 1px solid rgba(0, 0, 0, 0.57);
+    }
+    .info a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .blog {
+        height: 695px;
+        text-align: center;
+    }
+    .blog h2 {
+        font-size: 25px;
+        margin: 50px 0 0 0;
+    }
+    .blog p {
+        font-size: 17px;
+        color: rgba(0, 0, 0, 0.789);
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .blog .cards {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .blog .cards .card {
+        padding: 0 20px;
+        text-align: left;
+        margin-top: 40px;
+    }
+    .blog .cards .card .image{
+        width: 100%;
+        height: 250px;
+    }
+    .blog .cards .card .image img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+    .blog .cards .card .life {
+        display: inline-block;
+        font-size: 15px;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(191, 106, 45);
+        padding: 2px 5px;
+        border-radius: 2px;
+        margin-top: 25px;
+    }
+    .blog .cards .card .date span {
+        color: #000;
+        font-weight: bold;
+    }
+    .blog .cards .card .date {
+        font-size: 15px;
+        padding-left: 0;
+    }
+    .blog .cards .card p {
+        padding: 0;
+        font-size: 15px;
+    }
+    .blog .cards .card a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        background-color: rgba(235, 230, 230, 0.508);
+        padding: 8px 18px;
+        border-radius: 3px;
+        border: 1px solid rgba(0, 0, 0, 0.289);
+    }
+    .footer {
+        height: 500px;
+        background-color: #1A1A1A;
+        position: relative;
+    }
+    .footer .block1 {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.453);
+        height: 400px;
+        display: flex;
+        align-items: center;
+    }
+    .footer .block1 .container {
+        display: flex;
+    }
+    .footer .box1 {
+        width: 100%;
+        height: 180px;
+        padding-top: 50px;   
+    }
+    .footer .box1 .image {
+        width: 100px;
+    }
+    .footer .box1 .image img {
+        width: 100%;
+    }
+    .footer .box1 i {
+        color: white;
+        padding: 30px 10px 30px 10px;
+    }
+    .footer .box2 {
+        color: white;
+        height: 260px;
+    }
+    .footer .box2 h4 {
+        padding-bottom: 20px;
+    }
+    .footer .box2 p {
+        color: rgba(255, 255, 255, 0.624);
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .footer .box3 {
+        color: white;
+        height: 240px;
+    }
+    .footer .box3 h4 {
+        padding-bottom: 20px;
+    }
+    .footer .box3 p {
+        color: rgba(255, 255, 255, 0.624);
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .footer .box4 {
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    .footer .box4 h4 {
+        color: white;
+        padding-top: 20px;
+    }
+    .footer .box4 .tel {
+        display: flex;
+        padding: 0 10px;
+        color: rgba(255, 255, 255, 0.535);
+        font-size: 13px;
+    }
+    .footer .box4 p {
+        padding-top: 10px;
+    }
+    .footer .box4 i {
+        padding-top: 12px;
+        padding-right: 10px;
+    }
+    .footer .box4 a {
+        color: rgba(255, 255, 255, 0.535);;
+    }
+    .footer .block2 {
+        padding: 20px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer .block2 span {
+        color: white;
+        font-weight: bold;
+        padding-right: 5px;
+    }
+    .footer .block2 p {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.446);
+        display: inline-block;
+        margin-top: 22px;
+    }
+    .footer .block2 .logo {
+        display: inline-block;
+        width: 500px;
+        height: 40px;
+        margin-top: 25px;
+    }
+    .footer .block2 .logo img {
+        width: 100%;
+    }
+    .footer .topButton a{
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        right: 10px;
+        bottom: 75px;
+        line-height: 55px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.529);
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .footer .topButton a i {
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.563);
+    }
+}
