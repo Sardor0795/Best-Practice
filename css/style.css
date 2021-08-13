@@ -534,6 +534,11 @@ ul li:nth-child(5) {
         margin-right: 100px;
     }
 }
+@media (max-width: 720px) {
+    ul li:nth-child(5) {
+        margin-right: 0px;
+    }
+}
 
 @media (min-width: 62rem) {
     .banner h1 {
