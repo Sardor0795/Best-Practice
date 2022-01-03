@@ -54,6 +54,12 @@ body {
   padding: 20px 0;
   position: relative;
 }
+.stick {
+  position: sticky;
+  z-index: 100;
+  background-color: #ffffff;
+  top: 0;
+}
 #author {
   display: none;
 }
