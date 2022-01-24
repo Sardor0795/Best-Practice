@@ -510,8 +510,7 @@ ul li:nth-child(5) {
     display: block;
     line-height: 50px;
     z-index: 100;
-    transition: 0.5s;
-    opacity: 0.9;
+    transition: 0.7s;
   }
   ul li {
     margin-left: 50px;
